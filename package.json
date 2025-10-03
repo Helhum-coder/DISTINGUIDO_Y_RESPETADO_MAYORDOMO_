@@ -1,0 +1,30 @@
+{
+  "name": "distinguido-y-respetado-mayordomo",
+  "version": "2.0.0",
+  "description": "ElMayordomo2025 - Unified HybridOS Avatar System",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory public",
+    "dev": "python -m http.server 3000 --directory public",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod",
+    "test": "python -m pytest tests/",
+    "lint": "echo 'Linting HTML/CSS/JS files'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Helhum-coder/DISTINGUIDO_Y_RESPETADO_MAYORDOMO_.git"
+  },
+  "author": "Helhum-coder",
+  "license": "MIT",
+  "keywords": [
+    "HybridOS",
+    "ElMayordomo2025",
+    "Avatar System",
+    "Real-time Dashboard",
+    "Unity Integration"
+  ],
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}

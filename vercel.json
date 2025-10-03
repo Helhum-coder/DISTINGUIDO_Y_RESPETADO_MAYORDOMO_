@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "distinguido-y-respetado-mayordomo",
+  "builds": [
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ],
+  "functions": {
+    "public/index.html": {
+      "memory": 128
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "regions": ["lhr1"]
+}
